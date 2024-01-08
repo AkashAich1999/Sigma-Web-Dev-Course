@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Let's Learn It</title>
+</head>
+<body>
+    <h1>HTML Forms Example :</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter Your Username : </label>
+            <input type="text" id="username" placeholder="Enter Username" autofocus required>
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="female">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to Newsletter</label>
+        </div>
+        <div>
+            <label for="comment">Enter Your Comment :</label>
+            <br>
+            <textarea name="comment" id="comment" cols="50" rows="4"></textarea>
+        </div>
+        <div>
+            <select name="fruits" id="">
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Mango">Mango</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
