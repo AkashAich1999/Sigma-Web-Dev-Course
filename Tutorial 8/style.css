@@ -9,3 +9,17 @@ a{
 div{
     background-color: yellow;
 }
+
+span{
+    background-color: blueviolet;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+input{
+    display: block;
+    margin-bottom: 10px;
+})
