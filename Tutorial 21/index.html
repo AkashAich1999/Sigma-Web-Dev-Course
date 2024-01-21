@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity - Rule 2</title>
+    <style>
+        /* if different types of selectors involved, then Specificity is used to decide which CSS will be applied 
+        
+        !important > Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector*/
+
+        /* The Specificity of this Selector is 1 */
+        h1{
+            color: aqua;
+        }
+
+        /* The Specificity of this Selector is 10 */
+        /* The Specificity of !important is 10,000 */
+        .yellow{
+            color: yellow !important;
+        }
+
+        /* The Specificity of this Selector is 10 */
+        .cred{
+            color: red;
+        }
+
+        /* The Specificity of this Selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+
+        /* The Specificity of this Selector is 10 */
+        /* Attribute Selector */
+        [data-x = a]{
+            background-color: red;
+        }
+
+        /* The Specificity of this Selector is 1 + 10 = 11 */
+        /* h1.yellow{
+            color: darkgrey;
+        } */
+
+        /* The Specificity of this Selector is 1 + 10 + 10 + 10 + 10 = 41 */
+        a.akashclass.aich-class[href]:hover {
+            color:fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: cyan;" class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+
+        <h1 style="color: cyan;" class="cred cpurple" data-x="a">CSS Specificity</h1>
+
+        <h1 class="yellow cred cpurple">CSS Specificity</h1>
+
+        <h1 class="cred cpurple">CSS Specificity</h1>
+    </div>
+</body>
+</html>
