@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+
+        .box::first-line{
+            color: red;
+        }
+
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+            padding: 3px;
+        }
+
+        /* Attribute Selector */
+        [data-color="primary"]{
+            margin-top: 45px;
+        }
+        /* p, a, .box, [data-color="primary"]{
+            margin-top: 45px;
+        } */
+        .box:nth-child(even){
+            background-color:chartreuse;
+        }
+        .box:nth-last-child(2){
+            background-color:cornsilk;
+        }
+
+        .boxes::before{
+            content: "Akash is Good.";
+            color:aqua;
+        }
+        .boxes::after{
+            content: "Aich is Great.";
+            color:cornflowerblue;
+        }
+        ::selection{
+            background-color: khaki;
+            color:crimson;
+        }
+        .box::first-letter{
+            color:black;
+            font-size: 25px;
+        }
+        input::placeholder{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit, quisquam, unde fugiat ea voluptatem, nihil eum dolorum fuga quis quasi. Harum eum beatae fuga! Aliquid quasi similique facilis tempora eveniet blanditiis atque, vel necessitatibus officia incidunt optio nisi quidem harum, autem voluptatibus sint error at assumenda quod? Ad omnis doloribus commodi adipisci earum impedit, facere quasi iste eos dolores veritatis harum autem, necessitatibus temporibus dolor! Ea reiciendis dicta quidem fugit. Porro praesentium adipisci laboriosam at voluptate magnam consequatur soluta voluptas veritatis, delectus laborum, cumque facere sint provident facilis dignissimos repellendus fuga! Similique minus incidunt, voluptates totam a in, rem repellat quibusdam aspernatur cupiditate aut sapiente hic fugiat, sunt est! Sapiente, tenetur voluptatum impedit incidunt nobis quisquam omnis veritatis aliquid eligendi natus obcaecati neque ad velit soluta iusto fugiat voluptate. Praesentium cumque pariatur maiores, quaerat temporibus repellendus ducimus quos sed assumenda? Cupiditate reiciendis sit beatae, vero corporis repellendus harum quidem consequuntur cum architecto, distinctio debitis?</div>
+        <div data-color="primary" class="box">Hey, I am a Box !!</div>
+        <div class="box">Hey, I am a Box !!</div>
+        <div class="box">Hey, I am a Box !!</div>
+        <input type="text" placeholder="Type your name here">
+    </div>
+</body>
+</html>
