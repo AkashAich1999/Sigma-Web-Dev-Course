@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        *{
+                margin: 0;
+                padding: 0;
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(40deg); */
+            
+            /* transform: rotate(0.25turn); */  /* equivalent to 90 degree */
+            /* transform: rotate(0.5turn); */  /* equivalent to 180 degree */
+            /* transform: rotate(1turn); */  /* equivalent to 360 degree */
+            
+            /* transform: rotateX(40deg); */
+            /* transform: rotateX(90deg); */  
+            /* transform: rotateY(40deg); */
+            /* transform: rotateY(96deg); */
+            /* transform: rotateZ(40deg); */
+
+            /* transform: scale(1.6); */
+            /* transform: scaleX(1.6); */
+            /* transform: scaleY(1.6); */
+            /* transform: scale3d(1.6); */
+
+            /* transform: skew(5deg); */
+            /* transform: skewX(5deg); */
+            /* transform: skewY(5deg); */
+
+            /* transform: translate(34px); */
+            /* transform: translate(34%); */
+            /* transform: translate(100%); */
+            /* transform: translateX(100%); */
+            /* transform: translateY(100%); */
+            /* transform: translateZ(100%) */
+
+            /* transform: translateY(100%) skewX(40deg) translateX(45%); */
+
+            /* transform: translateY(-100%); */
+
+            transform-origin: 50% 50%;  /* By Default */
+            transform-origin: 0% 0%;
+            transform: rotate(0.125turn);
+        }
+        .container{
+            border: 2px solid purple;
+            width: 100vw;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
