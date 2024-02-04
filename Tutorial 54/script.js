@@ -14,3 +14,7 @@ if(isTrue){
 }
 
 console.log("Your Number is " + a);
+
+document.title = "Hello, I am Akash Aich";
+
+document.body.style.backgroundColor = "red";
