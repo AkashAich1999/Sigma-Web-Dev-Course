@@ -42,3 +42,12 @@ const red = (a, b) => {
 console.log(arr2.reduce(red));
 
 console.log(Array.from("Akash"));
+
+
+// Array.keys()
+const array1 = ['a', 'b', 'c'];
+const iterator = array1.keys();  // returns an Object Iterator Array containing the Keys of an Array.
+
+for (const key of iterator) {
+  console.log(key);
+}
