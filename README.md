@@ -8,3 +8,5 @@
  3) Twitter Clone (using Tailwind CSS)
 
  Anyone following his playlist can go through the HTML, CSS, JavaScript (Intro) & Tailwind CSS. Harry sir did his Job quite well, but due to lengthy & repetitive nature of his JavaScript videos, I will Recommend to re-learn JavaScript from somewhere else once you finish till Video 84.
+
+ [NOTE : The Projects created are in other separate Repositories.]
